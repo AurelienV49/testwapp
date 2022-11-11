@@ -1,0 +1,28 @@
+Télécharger Lighthouse
+Télécharger Android Studio
+
+1 - manifest.json 
+      https://developer.mozilla.org/fr/docs/Web/Manifest 
+      standalone == fait disparaitre l'url
+
+2 - emulateur : android pie (adresse du projet : 10.0.2.2:5500)
+
+3 - Copier/Coller les éléments Meta en HTML
+
+4 - service worker
+// Afficher automatiquement la bannière "Add to home screen"
+https://developers.google.com/web/fundamentals/app-install-banners/native
+
+5 - HTTPS sur mobile
+      Dans chrome aller sur : chrome://inspect/#devices
+      Sur mobile aller sur : http://localhost:5500
+
+
+A rajouter (éventuellement) dans le manifest :
+"prefer_related_applications": true,
+"related_applications": [
+  {
+    "platform": "play",
+    "id": "com.google.samples.apps.iosched"
+  }
+]
